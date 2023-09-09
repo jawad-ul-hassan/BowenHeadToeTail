@@ -1246,9 +1246,8 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100dvh;
   padding-top: 35px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .header-mobile-content {
@@ -1256,14 +1255,14 @@ h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: calc(15rem / 16);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-mobile-logo {
   display: block;
-  width: calc(80rem / 16);
-  height: calc(80rem / 16);
+  width: calc(75rem / 16);
+  height: calc(75rem / 16);
 }
 
 .header-mobile-logo > img {
@@ -1280,7 +1279,7 @@ h6 {
 }
 
 .header-mobile-hero-content {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .header-mobile-hero-title {
@@ -1342,7 +1341,7 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: calc(25rem / 16);
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .header-mobile-hero-btn-contact {
@@ -1387,7 +1386,7 @@ h6 {
 
 /* Quote Mobile */
 .quote-mobile {
-  padding: 60px 20px;
+  padding: 60px 15px;
   background: rgba(186, 200, 189, 0.19);
   backdrop-filter: blur(25px);
 }
@@ -1439,7 +1438,7 @@ h6 {
 .about-mobile-content > img {
   width: calc(150rem / 16);
   margin-left: auto;
-  margin-top: -100px;
+  margin-top: -90px;
   position: relative;
   z-index: 2;
 }
@@ -1447,7 +1446,7 @@ h6 {
 .about-mobile-title {
   font-size: var(--bigger-font-size);
   font-weight: var(--weight-bold);
-  margin-bottom: 35px;
+  margin-top: -35px;
   letter-spacing: 1.14px;
 }
 
@@ -1455,6 +1454,7 @@ h6 {
   font-size: var(--regular-font-size);
   font-weight: var(--weight-regular);
   letter-spacing: 0.6px;
+  margin-top: 35px;
 }
 
 .about-mobile-more-content {
@@ -1503,7 +1503,7 @@ h6 {
 }
 
 .treatments-mobile-content {
-  padding: 0 25px;
+  padding: 0 15px;
 }
 
 .treatments-mobile-title {
@@ -1567,7 +1567,7 @@ h6 {
 }
 
 .price-mobile-content {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .price-mobile-title {
@@ -1586,8 +1586,8 @@ h6 {
 .price-mobile-cards {
   display: flex;
   flex-direction: column;
-  row-gap: calc(50rem / 16);
-  margin-top: 50px;
+  row-gap: calc(60rem / 16);
+  margin-top: 60px;
 }
 
 .price-mobile-card {
@@ -1603,14 +1603,14 @@ h6 {
 }
 
 .price-mobile-card-title {
-  font-size: var(--medium-two-font-size);
+  font-size: var(--medium-three-font-size);
   font-weight: var(--weight-semi-bold);
   letter-spacing: 0.84px;
 }
 
 .price-mobile-card-header > img {
-  width: calc(105rem / 16);
-  height: calc(105rem / 16);
+  width: calc(95rem / 16);
+  height: calc(95rem / 16);
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1675,7 +1675,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: calc(15rem / 16);
-  padding-left: 20px;
+  padding-left: 15px;
   width: min(100% - calc(12.5rem / 16));
   margin-left: auto;
 }
@@ -1789,8 +1789,8 @@ h6 {
 .contact-mobile-content {
   width: min(100% - calc(25rem / 16));
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contact-mobile-title {
@@ -1935,7 +1935,7 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 20px;
+  padding: 60px 15px;
 }
 
 .stories-mobile-title {
@@ -1946,8 +1946,9 @@ h6 {
 }
 
 .stories-mobile-subtitle {
+  font-size: var(--regular-font-size);
   font-weight: var(--weight-medium);
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   letter-spacing: 0.69px;
 }
 
@@ -1966,7 +1967,7 @@ h6 {
 .stories-mobile-review-card {
   background: var(--off-white-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 25px 15px;
+  padding: 25px 20px;
 }
 
 .stories-mobile-review-card-title {
@@ -1977,6 +1978,7 @@ h6 {
 }
 
 .stories-mobile-review-card-text {
+  font-size: var(--small-font-size);
   font-weight: var(--weight-light);
   letter-spacing: 0.6px;
   margin-bottom: 20px;
@@ -1990,13 +1992,14 @@ h6 {
 .footer-mobile {
   background-color: var(--black-color-light);
   color: var(--white-color);
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 .footer-mobile-socials {
   display: flex;
+  justify-content: center;
   align-items: center;
-  column-gap: calc(75rem / 16);
+  column-gap: calc(35rem / 16);
 }
 
 .footer-mobile-social-link img {
