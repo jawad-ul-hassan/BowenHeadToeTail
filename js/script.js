@@ -6,8 +6,6 @@ const aboutMobileMoreContent = document.querySelector(
   '.about-mobile-more-content'
 );
 
-console.log(aboutMobileMoreContent);
-
 readMoreBtn.addEventListener('click', () => {
   if (readMoreText.textContent === 'Read More') {
     readMoreText.textContent = 'Read Less';
