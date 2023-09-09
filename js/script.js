@@ -1,3 +1,18 @@
+// Hamburger
+let menu = document.querySelector('.header-mobile-hamburger');
+let menuIcon = document.querySelector('#hamburger-icon');
+let navbar = document.querySelector('.header-mobile-nav');
+
+menu.addEventListener('click', () => {
+  if (navbar.classList.contains('active')) {
+    menuIcon.src = 'images/hamburger.svg';
+    navbar.classList.remove('active');
+  } else {
+    menuIcon.src = 'images/x.svg';
+    navbar.classList.add('active');
+  }
+});
+
 // Read More
 const readMoreBtn = document.querySelector('.about-mobile-more-btn');
 const readMoreText = document.querySelector('.about-mobile-more-btn-text');
