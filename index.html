@@ -20,6 +20,18 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('vSk_GHUZ75SWKcPOQ');
+      })();
+    </script>
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Title -->
     <title>Bowen Head Toe Tail - Sam Smith</title>
     <!-- CSS -->
@@ -991,6 +1003,7 @@
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     placeholder="Your Name"
                     required
                   />
@@ -999,6 +1012,7 @@
                   <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Your e-mail Address"
                     required
                   />
@@ -1007,6 +1021,7 @@
                   <input
                     type="tel"
                     name="phone"
+                    id="phone"
                     placeholder="Your Telephone Number"
                     required
                   />
@@ -1037,6 +1052,7 @@
                 <div class="contact-form-field">
                   <textarea
                     name="message"
+                    id="message"
                     placeholder="Your Message"
                     required
                   ></textarea>
@@ -1078,6 +1094,7 @@
               <input
                 type="text"
                 name="name-mobile"
+                id="name-mobile"
                 placeholder="Your Name"
                 required
               />
@@ -1086,6 +1103,7 @@
               <input
                 type="email"
                 name="email-mobile"
+                id="email-mobile"
                 placeholder="Your e-mail Address"
                 required
               />
@@ -1094,6 +1112,7 @@
               <input
                 type="tel"
                 name="phone-mobile"
+                id="phone-mobile"
                 placeholder="Your Telephone Number"
                 required
               />
@@ -1124,6 +1143,7 @@
             <div class="contact-mobile-form-field">
               <textarea
                 name="message-mobile"
+                id="message-mobile"
                 placeholder="Your Message"
                 required
               ></textarea>
@@ -1386,6 +1406,77 @@
     </footer>
 
     <!-- JS -->
+    <script>
+      document.querySelector('.contact-form').addEventListener('submit', e => {
+        e.preventDefault();
+
+        var params = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          contact: document.querySelector('input[name="contact"]:checked')
+            .value,
+          message: document.getElementById('message').value,
+        };
+        const serviceID = 'service_0md1zit';
+        const templateID = 'template_hztjgc1';
+        emailjs
+          .send(serviceID, templateID, params)
+          .then(function (res) {
+            Swal.fire({
+              icon: 'success',
+              title: 'Form is submitted successfully!',
+              showConfirmButton: false,
+              timer: 2000,
+            });
+            document.querySelector('.contact-form').reset();
+          })
+          .catch(function (err) {
+            Swal.fire({
+              icon: 'error',
+              title: 'Failed to submit form!',
+              showConfirmButton: false,
+            });
+          });
+      });
+    </script>
+    <script>
+      document
+        .querySelector('.contact-mobile-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          var params = {
+            name: document.getElementById('name-mobile').value,
+            email: document.getElementById('email-mobile').value,
+            phone: document.getElementById('phone-mobile').value,
+            contact: document.querySelector(
+              'input[name="contact-mobile"]:checked'
+            ).value,
+            message: document.getElementById('message-mobile').value,
+          };
+          const serviceID = 'service_0md1zit';
+          const templateID = 'template_hztjgc1';
+          emailjs
+            .send(serviceID, templateID, params)
+            .then(function (res) {
+              Swal.fire({
+                icon: 'success',
+                title: 'Form is submitted successfully!',
+                showConfirmButton: false,
+                timer: 2000,
+              });
+              document.querySelector('.contact-mobile-form').reset();
+            })
+            .catch(function (err) {
+              Swal.fire({
+                icon: 'error',
+                title: 'Failed to submit form!',
+                showConfirmButton: false,
+              });
+            });
+        });
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
