@@ -12,6 +12,12 @@
       content="Bowen practitioner Frome Somerset, Reiki therapy practitioner, Gentle non-invasive therapies, Canine Bowen treatment, Qualified Reiki practitioner, Sam's garden cabin therapy, Relaxing therapies for humans and dogs"
     />
     <meta name="author" content="Sam Smith" />
+    <link
+      rel="shortcut icon"
+      href="./images/bowenhtt-logo.png"
+      type="image/x-icon"
+      sizes="64X64"
+    />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,20 +30,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body id="home">
     <!--*****-----***** Desktop *****-----*****-->
     <!-- Header -->
     <header id="desktop" class="header">
       <div class="header-content">
-        <a href="#" class="header-logo">
+        <a href="#home" class="header-logo">
           <img src="./images/bowenhtt-logo.png" alt="Bowen Head Toe Tail" />
         </a>
         <nav class="header-nav">
-          <a href="#" class="header-nav-link">About</a>
-          <a href="#" class="header-nav-link">Treatments</a>
-          <a href="#" class="header-nav-link">Price List</a>
-          <a href="#" class="header-nav-link">Success Stories</a>
-          <a href="#" class="header-nav-btn">Contact</a>
+          <a href="#about" class="header-nav-link">About</a>
+          <a href="#treatments" class="header-nav-link">Treatments</a>
+          <a href="#price-list" class="header-nav-link">Price List</a>
+          <a href="#success-stories" class="header-nav-link">Success Stories</a>
+          <a href="#contact" class="header-nav-btn">Contact</a>
         </nav>
       </div>
     </header>
@@ -54,15 +60,15 @@
             </h2>
             <p class="hero-signature">By Sam Smith</p>
             <div class="hero-actions">
-              <a href="#" class="hero-btn-contact">Contact</a>
-              <a href="#" class="hero-btn-more">More Info</a>
+              <a href="#contact" class="hero-btn-contact">Contact</a>
+              <a href="#treatments" class="hero-btn-more">More Info</a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- About -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-content">
             <div class="about-item">
@@ -104,8 +110,8 @@
                 you. Sam
               </p>
               <div class="about-actions">
-                <a href="#" class="about-btn-contact">Contact</a>
-                <a href="#" class="about-btn-more">More Info</a>
+                <a href="#contact" class="about-btn-contact">Contact</a>
+                <a href="#treatments" class="about-btn-more">More Info</a>
               </div>
             </div>
 
@@ -199,12 +205,12 @@
             Reiki works on all levels - mental, emotional, spiritual & physical.
           </h2>
           <img src="./images/Down-quotation.svg" alt="Quotation Mark" />
-          <p class="quote-author">-Sophie Masi</p>
+          <p class="quote-author">- Sophie Masi</p>
         </div>
       </section>
 
       <!-- Treatments -->
-      <section class="treatments">
+      <section class="treatments" id="treatments">
         <div class="container">
           <div class="treatments-content">
             <div class="treatments-item">
@@ -371,7 +377,7 @@
       </section>
 
       <!-- Price List -->
-      <section class="price">
+      <section class="price" id="price-list">
         <div class="container">
           <div class="price-content">
             <h2 class="price-title">Price List</h2>
@@ -535,8 +541,8 @@
               </div>
             </div>
             <div class="price-actions">
-              <a href="#" class="price-btn-contact">Contact</a>
-              <a href="#" class="price-btn-more">More Info</a>
+              <a href="#contact" class="price-btn-contact">Contact</a>
+              <a href="#treatments" class="price-btn-more">More Info</a>
             </div>
           </div>
         </div>
@@ -566,8 +572,8 @@
                 Please get in touch if you would like to purchase a voucher.
               </p>
               <div class="gift-actions">
-                <a href="#" class="gift-btn-contact">Contact</a>
-                <a href="#" class="gift-btn-more">More Info</a>
+                <a href="#contact" class="gift-btn-contact">Contact</a>
+                <a href="#treatments" class="gift-btn-more">More Info</a>
               </div>
             </div>
           </div>
@@ -575,7 +581,228 @@
       </section>
 
       <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-item">
+              <h2 class="contact-title">Contact</h2>
+              <h4 class="contact-subtitle">
+                Please get in touch via the form below, or email me at
+                <a href="mailto:bowenheadtoetail@gmail.com"
+                  >bowenheadtoetail@gmail.com</a
+                >. I look forward to hearing from you!
+              </h4>
+              <form class="contact-form">
+                <div class="contact-form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="contact-form-field">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your e-mail Address"
+                    required
+                  />
+                </div>
+                <div class="contact-form-field">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Your Telephone Number"
+                    required
+                  />
+                </div>
+                <div class="contact-form-group">
+                  <span class="contact-form-label">Preferred Contact: </span>
+                  <div class="contact-form-radio">
+                    <label for="contact-email">Email</label>
+                    <input
+                      type="radio"
+                      name="contact"
+                      id="contact-email"
+                      value="email"
+                      required
+                    />
+                  </div>
+                  <div class="contact-form-radio">
+                    <label for="contact-phone">Telephone</label>
+                    <input
+                      type="radio"
+                      name="contact"
+                      id="contact-phone"
+                      value="telephone"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="contact-form-field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="contact-form-btn">Send</button>
+              </form>
+            </div>
+            <div class="contact-image">
+              <img
+                src="./images/bowenhtt-logo.png"
+                alt="
+              Bowen Head Toe Tail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote">
+        <div class="quote-content">
+          <img src="./images/up-quotation.svg" alt="Quotation Mark" />
+          <h2 class="quote-text">
+            I have felt the benefit, both mentally & physically.
+          </h2>
+          <img src="./images/Down-quotation.svg" alt="Quotation Mark" />
+          <p class="quote-author">- M Moulton, Client</p>
+        </div>
+      </section>
+
+      <!-- Stories -->
+      <section class="stories" id="success-stories">
+        <div class="container">
+          <div class="stories-content">
+            <h2 class="stories-title">Success Stories</h2>
+            <p class="stories-text">
+              Thank you to all my wonderful clients, it is a pleasure supporting
+              you. <br />
+              Here are a few of the kind testimonials I have received in the
+              last few years.
+            </p>
+          </div>
+          <div class="stories-reviews">
+            <div class="stories-review-left">
+              <div class="stories-review-card">
+                <h3 class="stories-review-card-title">Mr A Sharp</h3>
+                <p class="stories-review-card-text">
+                  “I am writing on behalf of my 91 year old mother, who had
+                  lower back pain following a pelvic fracture.
+                </p>
+                <p class="stories-review-card-text">
+                  After 3 sessions with Sam she was no longer in pain!
+                </p>
+                <p class="stories-review-card-text">Thank you so much Sam!”</p>
+              </div>
+              <div class="stories-review-card">
+                <h3 class="stories-review-card-title">M. Moulton</h3>
+                <p class="stories-review-card-text">
+                  “Since my first ‘taster’ session, I have felt the benefit,
+                  both mentally & physically.
+                </p>
+                <p class="stories-review-card-text">
+                  My tremor has lessoned & I feel more ‘grounded’ & relaxed.
+                </p>
+                <p class="stories-review-card-text">Thank you, Sam”</p>
+              </div>
+              <div class="stories-review-card">
+                <h3 class="stories-review-card-title">R. Sylvana</h3>
+                <p class="stories-review-card-text">
+                  “Such a beautiful session with Sam. My body feels light &
+                  refreshed & never seen something so amazing & effective &
+                  highly recommended booking in.
+                </p>
+                <p class="stories-review-card-text">
+                  Sam is so lovely, caring & professional & felt so relaxed,
+                  happy & comfortable throughout”
+                </p>
+              </div>
+              <div class="stories-review-card">
+                <h3 class="stories-review-card-title">Mr & Mrs Brocks</h3>
+                <p class="stories-review-card-text">
+                  “Sam worked wonders with our previous dog and she’s treated
+                  our rescue dog, Chuckie. It amazes me every time how impactful
+                  & effective Bowen Treatment is. Chuckie has a new lease of
+                  life!
+                </p>
+                <p class="stories-review-card-text">
+                  Sam’s attention, affection & ability to read dogs is superior”
+                </p>
+              </div>
+            </div>
+            <div class="stories-review-right">
+              <div class="stories-review-card">
+                <h3 class="stories-review-card-title">Mr P Ruddick</h3>
+                <p class="stories-review-card-text">
+                  “Well what can I say I was not sure Bowen would work for me so
+                  I gave it a try and after the first treatment I felt a
+                  completely different person as I have always got some kind of
+                  niggle as I'm a very sporting person and here I am 2 years (I
+                  think) of treatments every 4/6 weeks keeps me on top of my
+                  game.
+                </p>
+                <p class="stories-review-card-text">
+                  Sam is such a lovely kind and sweet person the sessions fly
+                  by. I've recommended giving it a try you won't be
+                  disappointed”
+                </p>
+              </div>
+              <div class="stories-review-image">
+                <img
+                  src="./images/bowenhtt-stories.png"
+                  alt="Maisie enjoying her Canine Bowen"
+                />
+                <p class="stories-review-image-text">
+                  Maisie enjoying her Canine Bowen
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stories-actions">
+            <a href="#contact" class="stories-btn-contact">Contact</a>
+            <a href="#treatments" class="stories-btn-more">More Info</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="https://adesignjem.com/" target="_blank" class="footer-credit">
+          <img src="./images/adesignjem-logo.svg" alt="adesignjem Logo" />
+          <p class="footer-credit-text">Website designed by @adesignjem</p>
+        </a>
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/bowenheadtoetail/"
+            class="footer-social-link"
+          >
+            <img src="./images/bi-instagram.svg" alt="Instagram Icon" />
+            <span class="footer-social-link-text">Instagram</span>
+          </a>
+          <a
+            href="https://www.facebook.com/SamHillmanBowen/?locale=en_GB"
+            class="footer-social-link"
+          >
+            <img src="./images/bi-facebook.svg" alt="Facebook Icon" />
+            <span class="footer-social-link-text">Facebook</span>
+          </a>
+          <a href="#home" class="footer-social-link">
+            <img src="./images/home.svg" alt="Bowen Head Toe Tail" />
+            <span class="footer-social-link-text">Home</span>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JS -->
     <script src="./js/script.js"></script>
