@@ -1465,7 +1465,7 @@ h6 {
 /* About-Mobile */
 .about-mobile {
   padding: 60px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 60px;
 }
 
 .about-mobile-content {
@@ -1537,7 +1537,7 @@ h6 {
 .treatments-mobile {
   padding: 60px 0;
   background: rgba(186, 200, 189, 0.19);
-  scroll-margin-top: 100px;
+  scroll-margin-top: 60px;
 }
 
 .treatments-mobile-content {
@@ -1601,7 +1601,7 @@ h6 {
 /* Price-List-Mobile */
 .price-mobile {
   padding: 60px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 60px;
 }
 
 .price-mobile-content {
@@ -1807,7 +1807,7 @@ h6 {
 /* Contact-Mobile */
 .contact-mobile {
   padding: 60px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 60px;
   overflow: hidden;
 }
 
@@ -1975,7 +1975,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 15px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 60px;
 }
 
 .stories-mobile-title {
