@@ -1770,6 +1770,7 @@ h6 {
 .contact-mobile {
   padding: 60px 0;
   scroll-margin-top: 100px;
+  overflow: hidden;
 }
 
 .contact-mobile-image {
@@ -1777,7 +1778,7 @@ h6 {
   margin-left: auto;
   position: relative;
   top: calc(-25rem / 16);
-  right: calc(-105rem / 16);
+  right: calc(-110rem / 16);
 }
 
 .contact-mobile-image > img {
