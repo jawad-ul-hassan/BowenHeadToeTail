@@ -12,12 +12,7 @@
       content="Bowen practitioner Frome Somerset, Reiki therapy practitioner, Gentle non-invasive therapies, Canine Bowen treatment, Qualified Reiki practitioner, Sam's garden cabin therapy, Relaxing therapies for humans and dogs"
     />
     <meta name="author" content="Sam Smith" />
-    <link
-      rel="shortcut icon"
-      href="./images/bowenhtt-logo.png"
-      type="image/x-icon"
-      sizes="64X64"
-    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,9 +26,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body id="home">
-    <!--*****-----***** Desktop *****-----*****-->
     <!-- Header -->
-    <header id="desktop" class="header">
+    <header class="header desktop">
       <div class="header-content">
         <a href="#home" class="header-logo">
           <img src="./images/bowenhtt-logo.png" alt="Bowen Head Toe Tail" />
@@ -48,10 +42,46 @@
       </div>
     </header>
 
+    <!-- Header-Mobile -->
+    <header class="header-mobile mobile">
+      <div class="container">
+        <div class="header-mobile-content">
+          <a href="#" class="header-mobile-logo">
+            <img src="./images/bowenhtt-logo.png" alt="Bowen head Toe Tail" />
+          </a>
+          <button class="header-mobile-hamburger">
+            <img src="./images/menu.svg" alt="Hamburger Icon" />
+          </button>
+          <!-- <nav class="header-mobile-nav">
+          <a href="#" class="header-mobile-nav-link">About</a>
+          <a href="#" class="header-mobile-nav-link">Price List</a>
+          <a href="#" class="header-mobile-nav-link">Treatments</a>
+          <a href="#" class="header-mobile-nav-link">Success Stories</a>
+          <a href="#" class="header-mobile-nav-btn">Contact</a>
+        </nav> -->
+        </div>
+        <div class="header-mobile-hero-content">
+          <h1 class="header-mobile-hero-title">
+            Bowen <br />
+            <span>&</span>Reiki<span>.</span>
+          </h1>
+          <p class="header-mobile-hero-signature">By Sam Smith</p>
+          <p class="header-mobile-hero-text">
+            Alternative holistic therapies <br />
+            for people & dogs.
+          </p>
+          <div class="header-mobile-hero-actions">
+            <a href="#" class="header-mobile-hero-btn-contact">Contact</a>
+            <a href="#" class="header-mobile-hero-btn-more">More Info</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- Main -->
-    <main id="desktop">
+    <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero desktop">
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Bowen & Reiki.</h1>
@@ -67,8 +97,20 @@
         </div>
       </section>
 
+      <!-- Quote-Mobile -->
+      <section class="quote-mobile quote-mobile-violet mobile">
+        <div class="quote-mobile-content">
+          <img src="./images/up-quotation.svg" alt="Quotation Mark" />
+          <h2 class="quote-mobile-text">
+            I have felt the benefit, both mentally <span>&</span> physically.
+          </h2>
+          <img src="./images/Down-quotation.svg" alt="Quotation Mark" />
+          <p class="quote-mobile-author">- M Moulton, Client</p>
+        </div>
+      </section>
+
       <!-- About -->
-      <section class="about" id="about">
+      <section class="about desktop" id="about">
         <div class="container">
           <div class="about-content">
             <div class="about-item">
@@ -197,8 +239,59 @@
         </div>
       </section>
 
+      <!-- About-Mobile -->
+      <section class="about-mobile mobile">
+        <div class="container">
+          <div class="about-mobile-content">
+            <img src="./images/sam-pp.png" alt="Sam Smith" />
+            <h2 class="about-mobile-title">About</h2>
+            <h3 class="about-mobile-subtitle">
+              Thank-you for visiting my website, My name’s Sam and I am a fully
+              insured and qualified bowen and reiki practitioner.
+            </h3>
+            <div class="about-mobile-more-content active">
+              <p class="about-mobile-text">
+                I used to work in the hospitality industry and in March 2012 I
+                received a Bowen treatment for my shoulders. I could not believe
+                the effectiveness of the treatment! This triggered me to want to
+                learn more about the technique, and to be able to offer other
+                people the benefits and relief that I experienced. Dogs have
+                always been a big part of my life and love being in their
+                company, So to be able to have a therapy that is beneficial to
+                dogs and people is just amazing.
+              </p>
+              <p class="about-mobile-text">
+                I have been fully qualified in human bowen since 2013 and canine
+                bowen since 2015. In April 2023 I became a reiki practitioner, I
+                feel reiki is a lovely therapy to add to my list!
+              </p>
+              <p class="about-mobile-text">
+                Both therapies are gentle, non-invasive and performed through
+                light clothing. I work out of my beautiful garden cabin from my
+                home, in a quiet area of Frome, Somerset, my goal is to help you
+                and when you walk out of my door I will keep in touch and see
+                how you are doing, my door is always open for a chat and I hope
+                you will always feel relaxed and comfortable in my company.
+              </p>
+              <p class="about-mobile-text">
+                Please take a look at my website, I look forward to hearing from
+                you. Sam
+              </p>
+            </div>
+            <button class="about-mobile-more-btn">
+              <span class="about-mobile-more-btn-text">Read More</span>
+              <img
+                src="./images/arrow.svg"
+                class="about-mobile-arrow"
+                alt="Arrow Icon"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- Quote -->
-      <section class="quote quote-violet">
+      <section class="quote quote-violet desktop">
         <div class="quote-content">
           <img src="./images/up-quotation.svg" alt="Quotation Mark" />
           <h2 class="quote-text">
@@ -210,7 +303,7 @@
       </section>
 
       <!-- Treatments -->
-      <section class="treatments" id="treatments">
+      <section class="treatments desktop" id="treatments">
         <div class="container">
           <div class="treatments-content">
             <div class="treatments-item">
@@ -376,8 +469,102 @@
         </div>
       </section>
 
+      <!-- Treatments-Mobile -->
+      <section class="treatments-mobile mobile">
+        <div class="container">
+          <div class="treatments-mobile-content">
+            <h2 class="treatments-mobile-title">Treatments Offered</h2>
+            <div class="treatments-mobile-box">
+              <h3 class="treatments-mobile-box-title">Human Bowen Therapy</h3>
+              <h4 class="treatments-mobile-box-subtitle">
+                It is gentle, subtle and a relaxing hands on treatment performed
+                through light clothing, I use fingers and thumbs on specific
+                areas, applying gentle pressure to the fascia.
+              </h4>
+              <p class="treatments-mobile-box-text">
+                During treatment there will be short periods of rest for your
+                body to respond to the gentle moves that have been performed.
+                These rest periods are an important part of the treatment and
+                give the body time to make subtle and fine adjustments which
+                help to rebalance, relieve tension and reduce pain.
+              </p>
+              <p class="treatments-mobile-box-text">
+                Bowen is wonderful for all ages, any children under 16 should be
+                supervised by a parent/carer.
+              </p>
+              <p class="treatments-mobile-box-text mb-0">
+                A course of 3 treatments over a period of 4-5 weeks are
+                recommended for most clients, however this can be discussed with
+                myself at the beginning of your treatment. After these 3
+                treatments it is advised to do ‘top up’ sessions to when suits
+                your body and lifestyle.
+              </p>
+              <img src="./images/small-line.svg" alt="Decorative Line" />
+            </div>
+            <div class="treatments-mobile-box">
+              <h3 class="treatments-mobile-box-title">Reiki</h3>
+              <h4 class="treatments-mobile-box-subtitle">
+                Reiki is a Japanese word pronounced Ray-Key meaning ‘universal
+                life giving energy’. Reiki is a holistic healing energy, which
+                means it works the body as a whole, working the physical,
+                emotional, mental and spiritual side within the body.
+              </h4>
+              <p class="treatments-mobile-box-text">
+                The reiki energy balances and harmonises the chakras within us.
+              </p>
+              <p class="treatments-mobile-box-text">
+                Reiki can bring a sense of peace, a feeling of being more
+                centred and an ability to cope better with every day challenges
+                life may bring
+              </p>
+              <p class="treatments-mobile-box-text mb-0">
+                I would work through a series of hand placements covering key
+                areas of the body and chakras. It is possible to work hands off
+                for those that would prefer no human touch.
+              </p>
+              <img src="./images/small-line.svg" alt="Decorative Line" />
+            </div>
+            <div class="treatments-mobile-box">
+              <h3 class="treatments-mobile-box-title">Canine Bowen Therapy</h3>
+              <h4 class="treatments-mobile-box-subtitle">
+                Veterinary permission is required prior to treatment.
+              </h4>
+              <p class="treatments-mobile-box-text">
+                The moves are applied the same way as people, with fingers and
+                thumbs making rolling type moves over the fascia.
+              </p>
+              <p class="treatments-mobile-box-text">
+                Upon arrival and meeting your dog a full medical history is
+                taken, this gives me a bigger picture to work out areas that
+                could be a discomfort for your dog. The treatment pace is
+                completely lead by your dog and this is really important that
+                they have the freedom and space to come and go as they please,
+                this also helps me gain the trust and respect from your dog.
+              </p>
+              <p class="treatments-mobile-box-text">
+                A course of 3 treatments over a period of 4-5 weeks is
+                recommended for most canine companions.
+              </p>
+              <p class="treatments-mobile-box-text mb-0">
+                Canine bowen is lovely for our golden oldies often suffering
+                with stiffness, its gentle and non-invasive and to often see the
+                changes in the dogs is wonderful, more energy, less stiffness,
+                an interest in life again and more interaction with their family
+                life, its always lovely to hear the feedback.
+              </p>
+            </div>
+            <div class="treatments-mobile-image">
+              <img
+                src="./images/bowenhtt-stories.png"
+                alt="Maisie enjoying her Canine Bowen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Price List -->
-      <section class="price" id="price-list">
+      <section class="price desktop" id="price-list">
         <div class="container">
           <div class="price-content">
             <h2 class="price-title">Price List</h2>
@@ -548,8 +735,176 @@
         </div>
       </section>
 
+      <!-- Price-List-Mobile -->
+      <section class="price-mobile mobile" id="price-list">
+        <div class="container">
+          <div class="price-mobile-content">
+            <h2 class="price-mobile-title">Price List</h2>
+            <h4 class="price-mobile-subtitle">
+              Prices cover a consultation and a treatment. Please note any
+              travel for me over 10 miles from Frome, Somerset, will be charged
+              50p per mile.
+            </h4>
+          </div>
+          <div class="price-mobile-cards">
+            <div class="price-mobile-card">
+              <div class="price-mobile-card-header">
+                <h3 class="price-mobile-card-title">Human Bowen</h3>
+                <img src="./images/bowenhtt-human.png" alt="Treatment Room" />
+              </div>
+              <ul class="price-mobile-card-treatment-list">
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Consultation</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>1 Hour Treatment</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Gentle & Non - Invasive</span>
+                </li>
+              </ul>
+              <ul class="price-mobile-card-person-list">
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img src="./images/el-adult.svg" alt="Adult Icon" />
+                  </div>
+                  <span>Adult (18+)</span>
+                  <span>£40.00</span>
+                </li>
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img src="./images/fa-child.svg" alt="Child Icon" />
+                  </div>
+                  <span>Child (5-17 years)</span>
+                  <span>£25.00</span>
+                </li>
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img
+                      src="./images/mingcute-baby-fill.svg"
+                      alt="Baby Icon"
+                    />
+                  </div>
+                  <span>Infant (0-4 years)</span>
+                  <span>£15.00</span>
+                </li>
+              </ul>
+            </div>
+            <div class="price-mobile-card">
+              <div class="price-mobile-card-header">
+                <h3 class="price-mobile-card-title">Human Riki</h3>
+                <img src="./images/bowenhtt-riki.png" alt="Treatment Room" />
+              </div>
+              <ul class="price-mobile-card-treatment-list">
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Consultation</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>1 Hour Treatment</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Reduce Stress & Anxiety</span>
+                </li>
+              </ul>
+              <ul class="price-mobile-card-person-list">
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img src="./images/el-adult.svg" alt="Adult Icon" />
+                  </div>
+                  <span>Adult (18+)</span>
+                  <span>£40.00</span>
+                </li>
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img src="./images/fa-child.svg" alt="Child Icon" />
+                  </div>
+                  <span>Child (5-17 years)</span>
+                  <span>£25.00</span>
+                </li>
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img
+                      src="./images/mingcute-baby-fill.svg"
+                      alt="Baby Icon"
+                    />
+                  </div>
+                  <span>Infant (0-4 years)</span>
+                  <span>£15.00</span>
+                </li>
+              </ul>
+            </div>
+            <div class="price-mobile-card">
+              <div class="price-mobile-card-header">
+                <h3 class="price-mobile-card-title">Canine Bowen</h3>
+                <img src="./images/bowenhtt-dog.png" alt="Canine Bowen" />
+              </div>
+              <p class="price-mobile-card-text">
+                For all Canine Bowen , veterinary permission is required prior
+                to treatment.
+              </p>
+              <ul class="price-mobile-card-treatment-list">
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Consultation</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>Promotes Agility</span>
+                </li>
+                <li class="price-mobile-card-treatment-list-item">
+                  <img
+                    src="./images/tick-circle-outline-green.svg"
+                    alt="Tick Circle Icon"
+                  />
+                  <span>For Dogs of all Ages!</span>
+                </li>
+              </ul>
+              <ul class="price-mobile-card-person-list">
+                <li class="price-mobile-card-person-list-item">
+                  <div>
+                    <img src="./images/bxs-dog.svg" alt="Dog Icon" />
+                  </div>
+                  <span>Dogs (any age)</span>
+                  <span>£35.00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Gift Voucher -->
-      <section class="gift">
+      <section class="gift desktop">
         <div class="container">
           <div class="gift-content">
             <div class="gift-image">
@@ -581,7 +936,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact" id="contact">
+      <section class="contact desktop" id="contact">
         <div class="container">
           <div class="contact-content">
             <div class="contact-item">
@@ -666,7 +1021,7 @@
       </section>
 
       <!-- Quote -->
-      <section class="quote">
+      <section class="quote desktop">
         <div class="quote-content">
           <img src="./images/up-quotation.svg" alt="Quotation Mark" />
           <h2 class="quote-text">
@@ -678,7 +1033,7 @@
       </section>
 
       <!-- Stories -->
-      <section class="stories" id="success-stories">
+      <section class="stories desktop" id="success-stories">
         <div class="container">
           <div class="stories-content">
             <h2 class="stories-title">Success Stories</h2>
@@ -775,7 +1130,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer desktop">
       <div class="footer-content">
         <a href="https://adesignjem.com/" target="_blank" class="footer-credit">
           <img src="./images/adesignjem-logo.svg" alt="adesignjem Logo" />
