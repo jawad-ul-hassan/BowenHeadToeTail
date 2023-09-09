@@ -1723,7 +1723,7 @@ h6 {
   row-gap: calc(25rem / 16);
   width: min(100% - calc(25rem / 16));
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .gift-mobile-btn-contact {
