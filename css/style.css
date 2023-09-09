@@ -210,7 +210,7 @@ h6 {
   font-size: var(--big-font-size);
   font-weight: var(--weight-regular);
   color: var(--brown-color);
-  margin-top: 50px;
+  margin-top: 15px;
   letter-spacing: -1px;
 }
 
@@ -219,7 +219,7 @@ h6 {
   font-size: calc(37rem / 16);
   font-weight: var(--weight-regular);
   color: rgba(75, 68, 52, 0.6);
-  margin-top: 30px;
+  margin-top: 35px;
   letter-spacing: -0.185px;
 }
 
@@ -370,7 +370,7 @@ h6 {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(21px);
   padding: 40px 35px;
-  margin-top: calc(-250rem / 16);
+  margin-top: calc(-300rem / 16);
   position: relative;
   z-index: 2;
 }
