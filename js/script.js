@@ -13,26 +13,6 @@ menu.addEventListener('click', () => {
   }
 });
 
-// Read More
-const readMoreBtn = document.querySelector('.about-mobile-more-btn');
-const readMoreText = document.querySelector('.about-mobile-more-btn-text');
-const arrowIcon = document.querySelector('.about-mobile-arrow');
-const aboutMobileMoreContent = document.querySelector(
-  '.about-mobile-more-content'
-);
-
-readMoreBtn.addEventListener('click', () => {
-  if (readMoreText.textContent === 'Read More') {
-    readMoreText.textContent = 'Read Less';
-    arrowIcon.style.transform = 'rotate(180deg)';
-    aboutMobileMoreContent.classList.remove('active');
-  } else {
-    readMoreText.textContent = 'Read More';
-    arrowIcon.style.transform = 'rotate(0deg)';
-    aboutMobileMoreContent.classList.add('active');
-  }
-});
-
 // Treatments Tabs
 function showTab(tabId) {
   const tabItems = document.querySelectorAll('.treatments-tab-item');
@@ -45,4 +25,24 @@ function showTab(tabId) {
 function hideTab(tabId) {
   const tabToHide = document.getElementById(tabId);
   tabToHide.classList.remove('active');
+}
+
+//Read More
+function toggleText() {
+  var dots = document.querySelector('.about-mobile-text-dots');
+  var moreText = document.querySelectorAll('.about-mobile-text-more');
+  var btnText = document.querySelector('#readMoreBtn');
+  const arrowIcon = document.querySelector('.about-mobile-arrow');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    moreText.forEach(text => (text.style.display = 'none'));
+    btnText.innerText = 'Read More';
+    arrowIcon.style.transform = 'rotate(0deg)';
+  } else {
+    dots.style.display = 'none';
+    moreText.forEach(text => (text.style.display = 'block'));
+    btnText.innerText = 'Read Less';
+    arrowIcon.style.transform = 'rotate(180deg)';
+  }
 }
